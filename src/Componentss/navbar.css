@@ -1,0 +1,101 @@
+
+.header-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: var(--primary-color) !important; */
+    z-index: 1030;
+    transition: all .3s ease-in-out;
+    display: inline;
+    /* background-color: rgb(3, 3, 3); */
+  }
+  .bg_menu {
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  @media (min-width: 1440px) {
+    .container{
+       max-width: 1440px;
+      
+        /* margin-left: auto; */
+      }
+      .navbar{
+        width: 100%;
+        /* max-width: 1440px; */
+        padding: auto;
+      }
+      .logoSet{
+        margin-right: 0%;
+      }
+}
+.logoSet{
+    margin-right: 10%;
+  }
+  .navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:1rem 0rem;
+    background-color: rgb(3, 3, 3);
+  }
+  .container{
+    width: 100%;
+  
+    /* margin-left: auto; */
+  }
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+  }
+  /* .mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  } */
+  .btn_primary, .hs-button.primary:hover {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #648FFF;
+    border-color: blue;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btn_primary:hover, .hs-button.primary:hover {
+    border-color: #ff619d;
+    color: #fff;
+    animation: gradient 10s linear infinite;
+    background-size: 600% 600%;
+    background-image: linear-gradient(45deg, #ff619d, #ff9e4b, #648fff, #6cd6ff, #ffc76a, #ff9e4b, #ff677d);
+  }
+  
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1440px;
+       padding: auto;
+    }
+    .navbar{
+      padding:30px
+    }
+
+  }

@@ -1,0 +1,92 @@
+.line-container {
+    width: 100px; /* Adjust width as needed */
+    height: 600px; /* Adjust height as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .line {
+    position: relative;
+    width: 23px;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .progress {
+    position: absolute;
+    width: 100%;
+    top: 0; /* Start from the bottom */
+    transition: height 0.1s linear;
+    height: 600px
+  
+  }
+  
+   
+  .percentage {
+    position: absolute;
+    left: 50px; /* Adjust as needed */
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: black;
+  }
+
+  .milestone-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .milestone {
+    position: relative;
+  }
+  
+  .milestone-content {
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .milestone-content.active {
+    color: #F46A34;
+  }
+  
+  .milestone-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .milestone-dot.active {
+    background-color: #F46A34;
+  }
+  
+.milestone-line.inactive {
+    background-color: gray; /* Inactive state */
+  }
+  .milestone-line {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 2px;
+    height: 0; /* Initially 0, will transition to 40px */
+    background-color: white;
+    z-index: 0;
+  }
+  
+  .milestone-line.completed {
+    height: 140px; /* Adjust this value based on the gap between your milestones */
+    background-color: #F46A34;
+  }
+  

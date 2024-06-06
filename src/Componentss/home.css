@@ -1,0 +1,210 @@
+.main_banner {
+    position: relative;
+    padding: 10% 5% 3% 5%;
+    height: 2000px;
+    background-color: white;
+    color:black
+}
+.containerHome{
+    width:100%
+}
+
+@media (min-width: 1440px) {
+    .main_banner{
+        /* background:red; */
+        max-width: 1440px;
+        margin: auto;
+        width: 100%;
+        background-color: white;
+    }
+    .launch{
+        max-width: 1440px;
+        margin: auto;
+        width: 100%;
+        background-color: white;
+        position: relative;
+        /* padding: 5% 10%; */
+        /* height: 2000px; */
+        /* background-color: white; */
+        color:black
+      }
+      .ease{
+        max-width: 1440px;
+        margin: auto;
+        background-color: white;
+        position: relative;
+        /* padding: 5% 10%; */
+        /* height: 2000px; */
+        /* background-color: white; */
+        color:black
+      }
+      .containerHome{
+        width:100%
+    }
+}
+/*  */
+.gradient-text {
+    background: linear-gradient(90deg, #FFC76A 0%, #FF619D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .gradient-text-Aalda {
+    background: linear-gradient(90deg, #648FFF 0%,  #6CD6FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text-feature {
+    background: linear-gradient(90deg, #CEEA5C 0%,  #6CD6FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .bold-italic {
+    font-style: italic;
+    font-weight: bold;
+  }
+  .btn_primary1, .hs-button1.primary:hover {
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: #648FFF;
+    /* border-color: blue; */
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    /* transition: all .1s ease-in-out; */
+    cursor: pointer;
+  }
+  
+  .btn_primary1:hover, .hs-button1.primary:hover {
+    /* border-color: #ff619d; */
+    color: #fff;
+    animation: gradient 10s linear infinite;
+    background-size: 600% 600%;
+    background-image: linear-gradient(45deg, #ff619d, #ff9e4b, #648fff, #6cd6ff, #ffc76a, #ff9e4b, #ff677d);
+  }
+  .launch{
+    /* position: relative; */
+    padding: 5% 10%;
+    height: 2000px;
+    background-color: white;
+    color:black
+  }
+  .gradient-bg {
+    background: linear-gradient(45deg, #FFC76A, #FF619D);
+    -webkit-background-clip: text;
+
+    background-clip: text;
+    
+    /* font-style: italic;
+    font-weight: bold; */
+    padding: 3% 0%;
+    border:1px solid black;
+    border-radius: 30px;
+  }
+  .medical{
+    position: relative;
+    padding: 0% 10%;
+    height: 1200px;
+    background-color: white;
+    color:black;
+    justify-content: space-around;
+  }
+  .unlock{
+    position: relative;
+    padding: 3% 8%;
+    /* height: 100%; */
+    width:100%;
+    background-color: #EEEEEE;
+    color:black
+  }
+  .improvement{
+    position: relative;
+    padding: 5% 8%;
+    height: 100%;
+    /* width:100%; */
+    background-color: #EEEEEE;
+    color:black
+  }
+  .ease{
+    position: relative;
+    padding: 6% 6%;
+    background-color:black;
+    color:white
+  }
+  .supervise {
+    position: relative;
+    padding: 6% 8%;
+    background-color:#FCFBFA;
+    color:black;
+    
+  }
+  .shadowCard{
+    box-shadow: 3px 5px 5px #c0baba
+
+  }
+  .simplicity{
+    position: relative;
+    padding: 6% 8%;
+    background-color:#FCFBFA;
+    color:black;
+  }
+  /* src/App.css */
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #EEEEEE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    margin: auto;
+    padding:5% 5%
+    /* border:1px solid red */
+  }
+  
+  .containerGrid {
+    /* border:1px solid red; */
+    margin:5% 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px; /* Adjust the gap size as needed */
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  .box {
+    background-color: #61dafb;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .big {
+    grid-column: span 2; /* Span two columns */
+  }
+  
+  /* Responsive adjustments if needed */
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    
+    .big {
+      grid-column: span 1;
+    }
+  }
+  

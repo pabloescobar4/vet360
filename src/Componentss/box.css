@@ -1,0 +1,47 @@
+/* src/App.css */
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px; /* Adjust the gap size as needed */
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  .box {
+    background-color: #61dafb;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .big {
+    grid-column: span 2; /* Span two columns */
+  }
+  
+  /* Responsive adjustments if needed */
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    
+    .big {
+      grid-column: span 1;
+    }
+  }
+  
