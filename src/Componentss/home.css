@@ -38,6 +38,13 @@
         /* background-color: white; */
         color:black
       }
+      .features{
+        max-width: 1440px;
+        margin: auto;
+        background-color: white;
+        position: relative;
+        color:black
+      }
       .containerHome{
         width:100%
     }
@@ -206,5 +213,15 @@
     .big {
       grid-column: span 1;
     }
+  }
+  .features{
+    position: relative;
+    padding: 6% 6%;
+    margin: auto;
+    background-color:white;
+    color:black
+  }
+  .bg-image{
+    background-image: url(../assets/believe1.png);
   }
   

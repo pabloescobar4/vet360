@@ -11,6 +11,10 @@ import AaldaIcon from "../assets/AaldaIcon.png";
 import quotesGreen from "../assets/quotesGreen.png";
 import quotesOrange from "../assets/quotesOrange.png";
 import quotesPink from "../assets/quotesPink.png";
+import ladyDoctor from '../assets/ladyDoctor.png';
+import curlyDoctor from '../assets/curlyDoctor.png';
+import laptop from '../assets/laptop.png';
+import videoIcon from '../assets/videoIcon.png';
 import { animateWithGsap } from "../utils/animations.js";
 
 import { useGSAP } from "@gsap/react";
@@ -466,10 +470,123 @@ const HomePage = () => {
           </p>
         </div>
       </div>
-
-      <div>
-        
+     <div className="flex flex-col gap-5 bg-[#FCFBFA]">
+     <div className="bg-[#FCFBFA]">
+        <div className="features flex bg-[#F1F5FF] rounded-2xl">
+          <div className="flex justify-center items-baseline items-center w-2/5 flex-col gap-6">
+          <p className="text-[#648FFF] text-4xl">Simplicity Revolution</p>
+        <p className="text-[#1F1F1F] text-3xl">Intuitive Screen Design, No Manuals Needed UI/UX</p>
+        <p className='w-4/5 text-[#000000] text-xl'>Even if you're not digitally inclined, it's no problem. With Vet360's intuitive operation,
+we completely digitize your daily cumbersome manual tasks.</p>
+<div
+              style={{
+                fontSize: "14px",
+                justifyContent: "center",
+                borderRadius: "30px",
+              }}
+              className="border border-white btn_primary1 hs-button1 primary   primary bg-[#648FFF]  cursor-pointer text-white w-40 rounded-2xl flex items-center text-center justify-items-center "
+            >
+              BOOK A DEMO
+            </div>
+          </div>
+          <div className="w-3/5">
+          <img src={ladyDoctor} width={"100%"} />
+        </div>
+    
+        </div>
+      
       </div>
+
+
+
+      <div className="bg-[#FCFBFA] mt-5">
+        <div className="features flex bg-[#FEF3F7] rounded-2xl">
+        <div className="w-3/5">
+          <img src={curlyDoctor} width={"100%"} />
+        </div>
+          <div className="flex justify-center items-baseline items-center w-2/5 flex-col gap-6">
+          <p className="text-[#FF619D] text-4xl">All-in-One Solution</p>
+        <p className="text-[#1F1F1F] text-3xl">Streamlined Operations</p>
+        <p className='w-4/5 text-[#000000] text-xl '>Say goodbye to cumbersome paper management and fragmented system use. With Vet360, you can seamlessly integrate all aspects of your operations, from customer management to appointments, records, billing, and every task within your clinic. Easily coordinate information across multiple clinics.</p>
+<div
+              style={{
+                fontSize: "14px",
+                justifyContent: "center",
+                borderRadius: "30px",
+              }}
+              className="border border-white btn_primary1 hs-button1 primary   primary bg-[#FF619D]  cursor-pointer text-white w-40 rounded-2xl flex items-center text-center justify-items-center "
+            >
+              BOOK A DEMO
+            </div>
+          </div>
+        
+    
+        </div>
+      
+      </div>
+
+
+
+
+
+
+      <div className="bg-[#FCFBFA] mt-5">
+        <div className="features flex bg-[#FFF6E8] rounded-2xl">
+          <div className="flex justify-center items-baseline items-center w-2/5 flex-col gap-6">
+          <p className="text-[#FB9C4B] text-4xl">The Benefits of the Cloud</p>
+        <p className="text-[#1F1F1F] text-3xl">Data Security and Flexible Access</p>
+        <p className='w-4/5 text-[#000000] text-xl'>Vet360 is a cloud-based electronic medical record system. Prioritizing data security, it also provides you with the ability to access your data from anywhere. Free yourself from paper records and offline data management; get the information you need when you need it.</p>
+<div
+              style={{
+                fontSize: "14px",
+                justifyContent: "center",
+                borderRadius: "30px",
+              }}
+              className="border border-white btn_primary1 hs-button1 primary   primary bg-[#FF9E4B]  cursor-pointer text-white w-40 rounded-2xl flex items-center text-center justify-items-center "
+            >
+              BOOK A DEMO
+            </div>
+          </div>
+          <div className="w-3/5">
+          <img src={laptop} width={"100%"} />
+        </div>
+    
+        </div>
+      
+      </div>
+
+
+
+      <div className="bg-image mt-5" >
+        <div className="features flex bg-transparent text-white rounded-2xl">
+          <div className="flex justify-center items-baseline items-center w-2/5 flex-col gap-6">
+          <p className="text-[#FCFBFA] text-5xl">You have to see it to believe it</p>
+       
+        <p className='w-4/5 text-[#FCFBFA]  text-xl'>Vet360 is a cloud-based electronic medical record system. Prioritizing data security, it also provides you with the ability to access your data from anywhere. Free yourself from paper records and offline data management; get the information you need when you need it.</p>
+<div
+              style={{
+                fontSize: "14px",
+                justifyContent: "center",
+                borderRadius: "30px",
+              }}
+              className="border border-white btn_primary1 hs-button1 primary   primary bg-transparent  cursor-pointer text-white w-40 rounded-2xl flex items-center text-center justify-items-center "
+            >
+              BOOK A DEMO
+            </div>
+          </div>
+          <div className="w-3/5">
+          <img src={videoIcon} width={"100%"} />
+        </div>
+    
+        </div>
+      
+      </div>
+     </div>
+
+
+
+     
+    
       </div>
     </>
   );
