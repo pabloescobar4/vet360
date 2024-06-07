@@ -16,9 +16,34 @@ import curlyDoctor from '../assets/curlyDoctor.png';
 import laptop from '../assets/laptop.png';
 import videoIcon from '../assets/videoIcon.png';
 import { animateWithGsap } from "../utils/animations.js";
-
+import MaskHalf from '../assets/MaskHalfgroup.png'
 import { useGSAP } from "@gsap/react";
+import Dropdown from "./dropdown.jsx";
 const HomePage = () => {
+
+
+  const questions = [
+    {
+      title: 'AccordianIs the security of the cloud-based system sufficient?',
+      content: 'Yes, security is of utmost importance, and our cloud-based system utilizes AWS (Amazon Web Services) with advanced security measures. These include data encryption, access control, regular audits, physical security, and backup and recovery.'
+    },
+    {
+      title: 'Question 2',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+      title: 'Question 3',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+      title: 'Question 4',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+      title: 'Question 5',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    }
+  ];
   useGSAP(() => {
     animateWithGsap("#features_title", { y: 0, opacity: 1, stagger: 0.3 });
     animateWithGsap("#launch", { y: 0, opacity: 1, stagger: 0.3 });
@@ -190,7 +215,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="box bg-black  p-7 flex gap-6 flex-col rounded-3xl text-white">  <div id="gridContainer" className="opacity-0 items-center justify-center flex"><img src={hands} /></div>
-          <div id="gridContainer" className="opacity-0 text-3xl w-3/ font-normal">
+          <div id="gridContainer" className="opacity-0 text-left text-3xl w-3/ font-normal">
           Realize Paperless Operations
           </div>
           <p id="gridContainer" className="opacity-0 text-#[EBF0FF] text-xl text-left font-light">
@@ -581,6 +606,99 @@ we completely digitize your daily cumbersome manual tasks.</p>
         </div>
       
       </div>
+
+
+      <div className="text-center text-black gap-5 flex items-center flex-col m-5 my-16 w-full">
+          {/* <p className="text-[#717171] p-5 text-2xl">Customer Reviews</p> */}
+          <p className="text-5xl font-normal">
+            Simple{" "}
+            <span className="gradient-text-pricing bold-italic p-1">pricing</span>{" "}
+            for all your needs
+          </p>
+          <p className="font-light text-lg w-2/5 text-[#3D3D3D]">
+          Flexible Plans! Choose the plan that suits your practice best
+          </p>
+          <div
+            style={{
+              fontSize: "12px",
+              justifyContent: "center",
+              borderRadius: "30px",
+            }}
+            className=" btn_primary1 hs-button1 primary   primary bg-[#648FFF]  cursor-pointer text-white w-38 rounded-2xl flex items-center text-center justify-items-center "
+          >
+            KNOW MORE
+          </div>
+        </div>
+
+
+        <div className="text-center text-black gap-5 flex items-center flex-col m-5 my-16 w-full">
+          {/* <p className="text-[#717171] p-5 text-2xl">Customer Reviews</p> */}
+          <p className="text-5xl font-normal">
+            Frequently Asked{" "}
+          </p>
+          <span className="gradient-text-questions text-5xl gradient-text-pricing bold-italic p-1">Questions</span>{" "}
+        </div>
+        <div className="text-center text-black gap-5 flex items-center flex-col m-5 my-16 w-full">
+      <div className="animate w-full max-w-screen-xl mx-auto p-6 bg-transparent rounded-lg ">
+        {questions.map((question, index) => (
+          <Dropdown key={index} title={question.title} content={question.content} />
+        ))}
+      </div>
+    </div>
+
+
+    <div className="flex text-center  gap-5 flex items-center  m-5 my-16 w-full">
+      {/* <div>
+      <img src={MaskHalf} height="70%"/>
+      </div>
+
+      */}
+        <div className="relative mt-2 w-full rounded-md overflow-hidden">
+          <img src={MaskHalf} alt="Background" className="w-3/5 h-full object-cover"/>
+          <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center w-full">
+            <p className="text-black  font-bold text-6xl text-left">Get Updates</p>
+            <div className="bg-black flex flex-col gap-8 m-10 p-8 px-16 " style={{width:"600px",borderRadius:"50px"}}>
+       <p className="p-2 text-left text-3xl">Say Hello!</p>
+       <div
+      style={{
+        width: '551px',
+        height: '71px',
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        gap: '20px',
+        paddingTop: '20px',
+        paddingBottom: '20px',
+        paddingRight: '30px',
+        paddingLeft: '30px',
+        background: '#FFFFFF',
+        borderRadius: '50px'
+      }}>
+      <span
+        style={{
+          color: '#938F8A',
+          fontSize: '16px',
+          fontFamily: 'Montserrat',
+          textAlign: 'left',
+          fontWeight: '500'
+        }}>
+        Full name
+      </span>
+    </div>
+       <input placeholder="FULL NAME" style={{padding:"20px",borderRadius:"50px"}} />
+       <input placeholder="FULL NAME" style={{padding:"20px",borderRadius:"50px"}} />
+       <input placeholder="FULL NAME" style={{padding:"20px",borderRadius:"50px"}} />
+       <input placeholder="FULL NAME" style={{padding:"20px",borderRadius:"50px"}} />
+       <input placeholder="FULL NAME" style={{padding:"20px",borderRadius:"50px"}} />
+ 
+
+      </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div>
+  
      </div>
 
 

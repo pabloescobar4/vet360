@@ -72,6 +72,21 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+  .gradient-text-pricing {
+    background: linear-gradient(90deg, #FFC76A 0%,  #FF619D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text-questions {
+    background: linear-gradient(90deg, #FF619D
+    0%,  #648FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 
   .bold-italic {
     font-style: italic;
@@ -222,6 +237,23 @@
     color:black
   }
   .bg-image{
-    background-image: url(../assets/believe1.png);
+    background-image: url(../assets/believe.png);
+  }
+  .animate{
+    transition-property: height;
+    transition-duration: 0.5s; /* Adjust as needed */
+    transition-timing-function: ease; /* Adjust as needed */
+  }
+  .image {
+    height: 1047px;
+    width: 1032px;
   }
   
+  .image .pexels-tima {
+    height: 1047px;
+    left: 0;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 1015px;
+  }

@@ -13,7 +13,35 @@ export default {
         },
         zinc: "#101010",
       },
+      keyframes: {
+        'fade-in-down': {
+          'from': {
+            transform: 'translateY(-0.5rem)',
+            opacity: '0',
+          },
+          'to': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+        },
+        'fade-out-up': {
+          'from': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+          'to': {
+            transform: 'translateY(-0.5rem)',
+            opacity: '0',
+          },
+        },
+      },
+      animation: {
+        'fade-in-down': 'fade-in-down 0.3s ease-out',
+        'fade-out-up': 'fade-out-up 0.2s ease-in',
+      },
     },
   },
+    
+  
   plugins: [],
 };
