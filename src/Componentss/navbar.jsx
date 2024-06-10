@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.css'
 
-import Logo from '../assets/NavBarlogo.png'
+import Logo from '../assets/images/NavBarlogo.png'
 const Navbar = () => {
   return (
     <div className='header-menu'>

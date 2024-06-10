@@ -139,3 +139,9 @@ body {
   --purple-secondary: rgba(88, 94, 195, 1);
   --shadow-1: 16px -24px 33.79999923706055px -13px rgba(0, 0, 0, 0.25);
 }
+.video-wrapper {
+  /* position: relative; */
+  /* width: 100%;
+  height: 100vh; /* Ensure each video segment occupies full viewport height */
+ 
+}
